@@ -247,7 +247,6 @@ No need to specify these are factors yet.
 > speed_vector <- c("medium", "slow","slow", "medium", "fast")
 '''
 
-
 '''
 Exercise
 Ordered factors (2)
