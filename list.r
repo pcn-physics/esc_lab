@@ -11,7 +11,7 @@ Pretty sweet for an R newbie, right? ;-)
 
 Instructions
 100 XP
-Click 'Submit Answer' to start learning everything about lists!
+Click \'Submit Answer\' to start learning everything about lists!
 '''
 
 '''
@@ -28,7 +28,7 @@ You could say that a list is some kind super data type: you can store practicall
 
 Instructions
 100 XP
-Click 'Submit Answer' to start the first exercise on lists.
+Click \Submit Answer\' to start the first exercise on lists.
 '''
 
 '''
@@ -61,14 +61,14 @@ Construct a list, named my_list, that contains the variables my_vector, my_matri
 '''
 Exercise
 Creating a named list
-Well done, you're on a roll!
+Well done, you\'re on a roll!
 
 Just like on your to-do list, you want to avoid not knowing or remembering what the components of your list stand for. 
 That is why you should give names to them:
 
 my_list <- list(name1 = your_comp1, 
                 name2 = your_comp2)
-This creates a list with components that are named name1, name2, and so on. If you want to name your lists after you've created them, 
+This creates a list with components that are named name1, name2, and so on. If you want to name your lists after you\'ve created them, 
 you can use the names() function as you did with vectors. The following commands are fully equivalent to the assignment above:
 
 my_list <- list(your_comp1, your_comp2)
@@ -132,7 +132,7 @@ Instructions
 Complete the code on the right to create shining_list; it contains three elements:
 
 moviename: a character string with the movie title (stored in mov)
-actors: a vector with the main actors' names (stored in act)
+actors: a vector with the main actors\' names (stored in act)
 reviews: a data frame that contains some reviews (stored in rev)
 Do not forget to name the list components accordingly (names are moviename, actors and reviews).
 '''
@@ -156,7 +156,7 @@ For example, to "grab" the first component of shining_list you type
 
 shining_list[[1]]
 A quick way to check this out is typing it in the console. 
-Important to remember: to select elements from vectors, you use single square brackets: [ ]. Don't mix them up!
+Important to remember: to select elements from vectors, you use single square brackets: [ ]. Don\'t mix them up!
 
 You can also refer to the names of the components, with [[ ]] or with the $ sign. 
 Both will select the data frame representing the reviews:
