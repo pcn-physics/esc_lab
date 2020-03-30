@@ -169,7 +169,7 @@ Exercise
 The total box office revenue for the entire saga
 Just like cbind() has rbind(), colSums() has rowSums(). 
 Your R workspace already contains the all_wars_matrix that you constructed in the previous exercise; 
-type all_wars_matrix to have another look. Let's now calculate the total box office revenue for the entire saga.
+type all_wars_matrix to have another look. Let\'s now calculate the total box office revenue for the entire saga.
 
 Instructions
 100 XP
@@ -220,7 +220,7 @@ This time, select the non-US revenue for the first two movies in all_wars_matrix
 Use mean() again to print out the average of the values in non_us_some.
 '''
 
-'''
+'''SOLN:
 > # all_wars_matrix is available in your workspace
 > all_wars_matrix
                            US non-US
@@ -335,4 +335,3 @@ Revenge of the Sith     4.9    4.9
 > mean(us_visitors)
 [1] 75.01401
 '''
-
