@@ -7,7 +7,7 @@
 EX: How it works
 
 In the editor on the right you should type R code to solve the exercises. 
-When you hit the 'Submit Answer' button, every line of code is interpreted and executed by R and you get a message 
+When you hit the \'Submit Answer\' button, every line of code is interpreted and executed by R and you get a message 
 whether or not your code was correct. The output of your R code is shown in the console in the lower right corner.
 R makes use of the # sign to add comments, so that you and others can understand what the R code is about. 
 Just like Twitter! Comments are not run as R code, so they will not influence your result. 
@@ -18,10 +18,10 @@ This is a good way to experiment with R code, as your submission is not checked 
 Instructions:
 
 In the editor on the right there is already some sample code. Can you see which lines are actual R code and which are comments?
-Add a line of code that calculates the sum of 6 and 12, and hit the 'Submit Answer' button.
+Add a line of code that calculates the sum of 6 and 12, and hit the \Submit Answer\' button.
 '''
 
-'''
+'''SOLN
 > # Calculate 3 + 4
 > 3 + 4
 [1] 7
@@ -55,7 +55,7 @@ Instructions:
 
 Type 2^5 in the editor to calculate 2 to the power 5.
 Type 28 %% 6 to calculate 28 modulo 6.
-Click 'Submit Answer' and have a look at the R output in the console.
+Click \'Submit Answer\' and have a look at the R output in the console.
 Note how the # symbol is used to add comments on the R code.
 '''
 
@@ -83,7 +83,7 @@ Note how the # symbol is used to add comments on the R code.
 > # Modulo
 > 28%%6
 [1] 4
-''']
+'''
 
 '''
 EX: Variable assignment
@@ -96,7 +96,7 @@ my_var <- 4
 
 Instructions:
 Over to you: complete the code in the editor such that it assigns the value 42 to the variable x in the editor. 
-Click 'Submit Answer'. Notice that when you ask R to print x, the value 42 appears.
+Click \'Submit Answer\'. Notice that when you ask R to print x, the value 42 appears.
 '''
 
 '''SOLN:
@@ -121,7 +121,7 @@ As a data analyst in training, you want to store the number of apples in a varia
 Instructions: 
 Type the following code in the editor: my_apples <- 5. This will assign the value 5 to my_apples.
 Type: my_apples below the second comment. This will print out the value of my_apples.
-Click 'Submit Answer', and look at the console: you see that the number 5 is printed. So R now links the variable my_apples to the value 5.
+Click \'Submit Answer\', and look at the console: you see that the number 5 is printed. So R now links the variable my_apples to the value 5.
 '''
 
 '''SOLN:
@@ -175,7 +175,7 @@ and assigned a text value to the variable my_oranges (see the editor),
 you would be trying to assign the addition of a numeric and a character variable to the variable my_fruit. This is not possible.
 
 Instructions
-Click 'Submit Answer' and read the error message. Make sure to understand why this did not work.
+Click \'Submit Answer\' and read the error message. Make sure to understand why this did not work.
 Adjust the code so that R knows you have 6 oranges and thus a fruit basket with 11 pieces of fruit.
 '''
 
@@ -190,7 +190,7 @@ Adjust the code so that R knows you have 6 oranges and thus a fruit basket with 
 > my_fruit <- my_apples + my_oranges
 Error: non-numeric argument to binary operator
 > my_fruit
-Error: object 'my_fruit' not found
+Error: object \'my_fruit\' not found
 > 
 '''
 
@@ -205,7 +205,6 @@ Error: object 'my_fruit' not found
 > my_fruit <- my_apples + my_oranges
 > my_fruit
 [1] 11
-> 
 '''
 
 '''
@@ -267,5 +266,4 @@ Complete the code in the editor and also print out the classes of my_character a
 > # Check class of my_logical
 > class(my_logical)
 [1] "logical"
-> 
 '''
