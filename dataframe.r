@@ -16,9 +16,11 @@ When doing a market research survey, however, you often have questions such as:
 \'How old are you?\' (numeric)
 \'What is your opinion on this product?\' or other \'open-ended\' questions (character)
 
-The output, namely the respondents\' answers to the questions formulated above, is a data set of different data types. You will often find yourself working with data sets that contain different data types instead of only one.
+The output, namely the respondents\' answers to the questions formulated above, is a data set of different data types. 
+You will often find yourself working with data sets that contain different data types instead of only one.
 
-A data frame has the variables of a data set as columns and the observations as rows. This will be a familiar concept for those coming from different statistical software packages such as SAS or SPSS.
+A data frame has the variables of a data set as columns and the observations as rows. 
+his will be a familiar concept for those coming from different statistical software packages such as SAS or SPSS.
 
 Instructions
 100 XP
@@ -76,7 +78,7 @@ Therefore, it is often useful to show only a small part of the entire data set.
 So how to do this in R? Well, the function head() enables you to show the first observations of a data frame. 
 Similarly, the function tail() prints out the last observations in your data set.
 
-Both head() and tail() print a top line called the 'header', which contains the names of the different variables in your data set.
+Both head() and tail() print a top line called the \'header\', which contains the names of the different variables in your data set.
 
 Instructions
 100 XP
