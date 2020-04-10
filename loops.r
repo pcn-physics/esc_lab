@@ -396,3 +396,217 @@ The inner loop should loop over the columns, with loop index j (use 1:ncol(ttt))
 Inside the inner loop, make use of print() and paste() to print out information in the following format: 
 "On row i and column j the board contains x", where x is the value on that position.
 '''
+
+'''SOLN:
+> # The tic-tac-toe matrix ttt has already been defined for you
+> 
+> # define the double for loop
+> for (i in 1:nrow(ttt)) {
+    for (j in 1:ncol(ttt)) {
+      print(paste("On row", i, "and column", j, "the board contains", ttt[i,j]))
+    }
+  }
+[1] "On row 1 and column 1 the board contains O"
+[1] "On row 1 and column 2 the board contains NA"
+[1] "On row 1 and column 3 the board contains X"
+[1] "On row 2 and column 1 the board contains NA"
+[1] "On row 2 and column 2 the board contains O"
+[1] "On row 2 and column 3 the board contains O"
+[1] "On row 3 and column 1 the board contains X"
+[1] "On row 3 and column 2 the board contains NA"
+[1] "On row 3 and column 3 the board contains X"
+'''
+
+'''
+Exercise
+Mix it up with control flow
+Let's return to the LinkedIn profile views data, stored in a vector linkedin. In the first exercise on for loops you already did a simple printout of each element in this vector. A little more in-depth interpretation of this data wouldn't hurt, right? Time to throw in some conditionals! As with the while loop, you can use the if and else statements inside the for loop.
+
+Instructions
+100 XP
+Add code to the for loop that loops over the elements of the linkedin vector:
+
+If the vector element's value exceeds 10, print out "You're popular!".
+If the vector element's value does not exceed 10, print out "Be more visible!"
+'''
+
+'''
+QUESTION:
+# The linkedin vector has already been defined for you
+linkedin <- c(16, 9, 13, 5, 2, 17, 14)
+
+# Code the for loop with conditionals
+for (li in linkedin) {
+  if ( ) {
+    
+  } else {
+    
+  }
+  print(li)
+}
+
+SOLN:
+> # The linkedin vector has already been defined for you
+> linkedin <- c(16, 9, 13, 5, 2, 17, 14)
+> 
+> # Code the for loop with conditionals
+> for (li in linkedin) {
+    if (li > 10) {
+      print("You're popular!")
+    } else{
+      print("Be more visible!")
+    }
+   print(li)
+  }
+[1] "You're popular!"
+[1] 16
+[1] "Be more visible!"
+[1] 9
+[1] "You're popular!"
+[1] 13
+[1] "Be more visible!"
+[1] 5
+[1] "Be more visible!"
+[1] 2
+[1] "You're popular!"
+[1] 17
+[1] "You're popular!"
+[1] 14
+'''
+
+'''
+Exercise
+Next, you break it
+In the editor on the right you'll find a possible solution to the previous exercise. 
+The code loops over the linkedin vector and prints out different messages depending on the values of li.
+
+In this exercise, you will use the break and next statements:
+
+The break statement abandons the active loop: the remaining code in the loop is skipped and the loop is not iterated over anymore.
+The next statement skips the remainder of the code in the loop, but continues the iteration.
+Instructions
+100 XP
+Extend the for loop with two new, separate if tests in the editor as follows:
+
+If the vector element's value exceeds 16, print out "This is ridiculous, I'm outta here!" and have R abandon the for loop (break).
+If the value is lower than 5, print out "This is too embarrassing!" and fast-forward to the next iteration (next).
+'''
+
+'''
+QUESTION:
+# The linkedin vector has already been defined for you
+linkedin <- c(16, 9, 13, 5, 2, 17, 14)
+
+# Adapt/extend the for loop
+for (li in linkedin) {
+  if (li > 10) {
+    print("You're popular!")
+  } else {
+    print("Be more visible!")
+  }
+  
+  # Add if statement with break
+  
+  
+  # Add if statement with next
+  
+  
+  print(li)
+}
+
+SOLN:
+> # The linkedin vector has already been defined for you
+> linkedin <- c(16, 9, 13, 5, 2, 17, 14)
+> 
+> # Adapt/extend the for loop
+> for (li in linkedin) {
+    if (li > 10) {
+      print("You're popular!")
+    } else {
+      print("Be more visible!")
+    }
+    
+    # Add if statement with break
+    if(li > 16){
+    print("This is ridiculous, I'm outta here!")
+    break
+    }
+    
+    # Add if statement with next
+    if(li < 4){
+    print("This is too embarrassing!")
+    next
+    }
+    
+    print(li)
+  }
+[1] "You're popular!"
+[1] 16
+[1] "Be more visible!"
+[1] 9
+[1] "You're popular!"
+[1] 13
+[1] "Be more visible!"
+[1] 5
+[1] "Be more visible!"
+[1] "This is too embarrassing!"
+[1] "You're popular!"
+[1] "This is ridiculous, I'm outta here!"
+'''
+
+'''
+Exercise
+Build a for loop from scratch
+This exercise will not introduce any new concepts on for loops.
+
+In the editor on the right, we already went ahead and defined a variable rquote. This variable has been split up into a vector that contains separate letters and has been stored in a vector chars with the strsplit() function.
+
+Can you write code that counts the number of r's that come before the first u in rquote?
+
+Instructions
+100 XP
+Initialize the variable rcount, as 0.
+Finish the for loop:
+if char equals "r", increase the value of rcount by 1.
+if char equals "u", leave the for loop entirely with a break.
+Finally, print out the variable rcount to the console to see if your code is correct.
+'''
+
+'''
+QUESTION:
+# Pre-defined variables
+rquote <- "r's internals are irrefutably intriguing"
+chars <- strsplit(rquote, split = "")[[1]]
+
+# Initialize rcount
+rcount <- 
+
+# Finish the for loop
+for (char in chars) {
+  
+  
+}
+
+# Print out rcount
+
+SOLN:
+> # Pre-defined variables
+> rquote <- "r's internals are irrefutably intriguing"
+> chars <- strsplit(rquote, split = "")[[1]]
+> 
+> # Initialize rcount
+> rcount <- 0
+> 
+> # Finish the for loop
+> for (char in chars) {
+    if(char == "r"){
+    rcount <- rcount + 1
+    }else if(char == "u"){
+      break
+    }
+  }
+> 
+> # Print out rcount
+> print(rcount)
+[1] 5
+'''
